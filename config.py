@@ -8,7 +8,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7488363157:AAE_-_JdHrOE8qaeLyC8XgsPoNE5RkIBkWE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7340328039:AAESg2u6VgJ0E-dvIao9gaM1TGenyejolfI")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28243586"))
@@ -17,30 +17,30 @@ APP_ID = int(os.environ.get("APP_ID", "28243586"))
 API_HASH = os.environ.get("API_HASH", "4022d5686b9b7a7cf8891205921a0ab3")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002377004374"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002394249695"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5961139833"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "7871556756"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madarazbotz:C1wJMA7Yyq2IpWsi@cluster0.olxrn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://madarazbotz:UbI0lIPWOAnwy6no@cluster0.wpbfa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002000365934"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002178219823"))
 JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", None)
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "6551906246"))
 
 #start message
 START_PIC = os.environ.get("START_PIC","https://graph.org/file/6eb635397847d798b231b-9a91ae2772a3fa3ed5.png")
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {first}\n\nI can store private files in Animes Duo Channel and other users can access it from special link. \n\n ᴘᴏᴡᴇʀᴇᴅ ʙʏ <a href='https://t.me/VR_unreal'>ᴠʀ ᴜɴʀᴇᴀʟ✨</a></b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7871556756 6447084129 5961139833 6551906246 6586546549").split()):
+    for x in (os.environ.get("ADMINS", "6668627674 7871556756").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
